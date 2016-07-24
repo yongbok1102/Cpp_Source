@@ -13,12 +13,13 @@ int main(){
   
   /*Gauss-Seidel method */
   
-  while(abs(x-xold)>tol && abs(y-yold)>tol && abs(z-zold)>tol){
+  while(abs(x-xold)>tol && abs(y-yold)>tol && abs(z-zold)>tol)
+  {
     xold=x;yold=y;zold=z;
-    x=(2*y+z)/3.;
-    y=(4.+2*x-z)/(-3.);
-    z=(5.-2*x+4*y)/7.;
-    N++;
+    x=(2*y+z)/3;
+    y=(4+2*x-z)/(-3);
+    z=(5-2*x+4*y)/7;
+    N=N+1;
     cout<<"iteration "<<N<<" x="<<x<<" y="<<y<<" z="<<z<<endl;
   }
   
