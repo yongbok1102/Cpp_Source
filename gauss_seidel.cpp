@@ -17,7 +17,7 @@ int main(){
     xold=x;yold=y;zold=z;
     x=(2*y+z)/3.;
     y=(4.+2*x-z)/(-3.);
-    z=(5.-2*4*y)/7.;
+    z=(5.-2*x+4*y)/7.;
     N++;
     cout<<"iteration "<<N<<" x="<<x<<" y="<<y<<" z="<<z<<endl;
   }
