@@ -15,7 +15,7 @@ int main()
     {
         for(int j=0;j<8;j++)
         {
-            A[i][j]=rand()%100000+1;
+            A[i][j]=rand()%999999+1;
             if(trunc(log10(A[i][j]))==0)
                 cout<<"00000"<<A[i][j]<<'\t';
             else if(trunc(log10(A[i][j]))==1)
