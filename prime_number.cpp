@@ -27,7 +27,7 @@ int main()
     pZ = new int[N];*/
 
 
-    fstream out;
+    ofstream out;
     out.open("prime_number.txt");
     
     for(int i=2;i<=A;i++)
