@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <fstream>
 
 using namespace std;
 
@@ -25,6 +26,10 @@ int main()
     /*pR = new int[N];
     pZ = new int[N];*/
 
+
+    fstream out;
+    out.open("prime_number.txt");
+    
     for(int i=2;i<=A;i++)
     {
 		N = trunc(sqrt(i)) + 1;
@@ -42,11 +47,13 @@ int main()
         
         if(x==1){
             cout<<i<<" is the prime number\n";
+            out<<i<<" is the prime number\n";
         }
 		delete[] pR;
 		delete[] pZ;
     }
     
+    out.close();
     /*delete[] pR;
     delete[] pZ;*/
     
